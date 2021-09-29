@@ -1,0 +1,27 @@
+[
+    {
+        "title": "JavaScript",
+        "content": "I think my favorite language is JavaScript! I find it is easy to use. I prefer Vanilla JavaScript to Jquery. It is one of the first coding languages I learned.",
+        "user_id": 1
+    },
+    {
+        "title": "Wireless",
+        "content": "I think my wifi is not working! Can anyone help?",
+        "user_id": 2
+    },
+    {
+        "title": "Monitors",
+        "content": "Im looking into getting a second monitor so I can use two screens at once when coding! Any recommendations?",
+        "user_id": 3
+    },
+    {
+        "title": "Just Chatting",
+        "content": "I just wanted to say hi to everyone! My name is Hailey!",
+        "user_id": 4
+    },
+    {
+        "title": "Bootstrap",
+        "content": "I love to use bootstrap! It makes the styling process so much easier! Its a breeze!",
+        "user_id": 5
+    }
+]

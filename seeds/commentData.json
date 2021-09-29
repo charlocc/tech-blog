@@ -1,0 +1,26 @@
+[
+    {
+        "note": "i prefer jquery to vanilla javascript",
+        "post_id": 1
+    },
+    {
+        "note": "Have you plugged in your router?",
+        "post_id": 2
+    },
+    {
+        "note": "I like samsung monitors best",
+        "post_id": 3
+    },
+    {
+        "note": "Hey Hailey! Nice to meet you",
+        "post_id": 4
+    },
+    {
+        "note": "...this is supposed to be a blog about tech",
+        "post_id": 4
+    },
+    {
+        "note": "Bootstrap is fun but I prefer to get down and dirty with CSS myself",
+        "post_id": 5
+    }
+]
