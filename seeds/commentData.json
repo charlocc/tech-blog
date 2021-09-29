@@ -1,26 +1,32 @@
 [
     {
         "note": "i prefer jquery to vanilla javascript",
-        "post_id": 1
+        "post_id": 1,
+        "user_id": 2
     },
     {
         "note": "Have you plugged in your router?",
-        "post_id": 2
+        "post_id": 2,
+        "user_id": 3
     },
     {
         "note": "I like samsung monitors best",
-        "post_id": 3
+        "post_id": 3,
+        "user_id": 4
     },
     {
         "note": "Hey Hailey! Nice to meet you",
-        "post_id": 4
+        "post_id": 4,
+        "user_id": 5
     },
     {
         "note": "...this is supposed to be a blog about tech",
-        "post_id": 4
+        "post_id": 4,
+        "user_id": 2
     },
     {
         "note": "Bootstrap is fun but I prefer to get down and dirty with CSS myself",
-        "post_id": 5
+        "post_id": 5,
+        "user_id": 1
     }
 ]

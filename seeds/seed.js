@@ -10,12 +10,34 @@ const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 
     await User.bulkCreate(userData, {});
-
+    await Post.bulkCreate(postData, {});
     await Comment.bulkCreate(commentData, {});
 
-    await Post.bulkCreate(postData, {});
     
     process.exit(0);
 }
 
 seedDatabase();
+
+
+// const seedDatabase = async () => {
+//     await sequelize.sync({ force: true });
+
+//     const users = await User.bulkCreate(userData, {
+//         individualHooks: true,
+//         returning: true,
+//     });
+
+//     const comments = await Comment.bulkCreate(commentData, {
+//         individualHooks: true,
+//         returning: true,
+//     });
+
+//     const posts = await Post.bulkCreate(postData, {
+//         individualHooks: true,
+//         returning: true,});
+    
+//     process.exit(0);
+// }
+
+// seedDatabase();
