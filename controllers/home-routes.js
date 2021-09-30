@@ -14,12 +14,10 @@ router.get('/', async (req, res) => {
     });
     const posts = postData.map((posts) => posts.get({ plain: true }));
 
-    // res.render('homepage', {
-    //   posts,
-    //   loggedIn: req.session.loggedIn
-    // });
-
-    res.json(posts);
+    res.render('homepage', {
+      posts,
+      // loggedIn: req.session.loggedIn
+    });
 
     res.status(200);
   } catch (err) {
@@ -37,22 +35,6 @@ router.get('/login', async (req, res) => {
 });
 
 
-// // Route to access the dashboard
-// router.get('/dashboard', async (req, res) => {
-//   try {
-//     const postData = await Post.findAll();
-//     const posts = postData.map((posts) => posts.get({ plain: true }));
-
-//     // res.render('dashboard', {
-//     //     posts,
-//     //     loggedIn: req.session.loggedIn
-//     // });
-//     res.json(posts);
-
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
 
 
 module.exports = router;
