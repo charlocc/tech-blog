@@ -1,10 +1,59 @@
-li {
-    list-style-type: none;
+:root{
+    --darkred: #591E11;
+    --lightred: #A6351C;
+    --offwhite: #D9CCC1;
+    --darkgray: #012326;
+    --darkblue: #025159;
+    --lightblue: #6fb8c1;
 }
 
-.box {
+body{
+    background-color: var(--offwhite);
+}
+
+header{
+    background-color: var(--darkgray);
+}
+
+h1{
+   font-weight: 900px; 
+   color: var(--offwhite);
+}
+
+ul {
+   list-style:none;
+   font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--darkgray);
+}
+
+a:hover{
+    color: var(--lightblue);
+}
+
+.offwhite{
+    color: var(--offwhite);
+}
+
+button{
     border-radius: 9px;
-    border: solid 2px black;
+    border: solid 2px var(--darkgray);
+    background-color: var(--offwhite);
+}
+
+.card-header{
+    background-color: var(--darkgray);
+    color: var(--offwhite);
+}
+
+.navitem{
+    width: 100%;
+    display: flex; 
+    justify-content: space-around; 
+    color: var(--offwhite);
 }
 
 .commentbox{
