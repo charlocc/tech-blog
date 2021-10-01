@@ -10,9 +10,13 @@ router.post('/', async (req, res) => {
             // user_id: req.session.user_id,
             user_id: req.body.user_id,
             // post_id: req.post.id,
-            user_id: post.body.user_id,
+            post_id: req.body.post_id,
         });
-        res.status(200).json(newComment);
+        // res.status(200).json(newComment);
+        res.render('post', {
+            newComment,
+            // loggedIn: req.session.loggedIn
+        });
     } catch (err) {
         res.status(400).json(err);
     }
