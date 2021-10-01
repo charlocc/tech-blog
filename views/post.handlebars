@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8 text-center">
+            <div class="card review-card column">
+                <div class="card-header">
+                    <div class="row">
+                        <h3 class="col-11">{{title}}</h3>
+                        <button class="btn btn-sm col-1 box" data-id="{{id}}">Delete</button>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <blockquote class="blockquote mb-0">
+                        <h5>"{{content}}"</h5>
+                        <p>{{user.username}} / {{date_created}}</p>
+                        {{#each comments as |comment|}}
+                        <li>{{> comment}}</li>
+                        {{/each}}
+                    </blockquote>
+                </div>
+                <div class="text-center commentbox">
+                    <form class="form new-comment-form">
+                        <div class="form-group">
+                            <label for="comment-desc"></label>
+                            <textarea class="form-input" id="comment-desc" name="comment-desc"
+                                placeholder=" Add a comment"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Add!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </br>
+        </div>
+    </div>
+</div>

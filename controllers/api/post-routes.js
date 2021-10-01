@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post } = require('../../models');
+const { Post , User , Comment } = require('../../models');
 const withAuth = require('../../utils/auth.js');
 
 // Add a new post
@@ -17,6 +17,8 @@ router.post('/', async (req, res) => {
         res.status(400).json(err);
     }
 });
+
+
 
 
 // Allow only the user who made the post to delete it

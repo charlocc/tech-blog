@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-8 text-center">
-            <ul class="reviews-list">
+            <ul class="posts-list">
                 {{#each posts as |post|}}
                 <li>{{> blogpost}}</li>
                 {{/each}}
@@ -9,15 +9,19 @@
         </div>
         <div class="col-3 text-center">
             <h2>Add a new blog post</h2>
-            <form class="form new-review-form">
+            <form class="form new-post-form">
                 <div class="form-group">
-                    <label for="review-desc"></label>
-                    <textarea class="form-input" id="review-desc" name="review-desc"></textarea>
+                    <label for="title-desc"></label>
+                    <textarea class="form-input m-2" id="title-desc" name="title-desc" placeholder=" Title"></textarea>
+                    <label for="post-desc"></label>
+                    <textarea class="form-input" id="post-desc" name="post-desc" placeholder=" Blog content"></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Add!</button>
                 </div>
             </form>
         </div>
+
+
     </div>
 </div>

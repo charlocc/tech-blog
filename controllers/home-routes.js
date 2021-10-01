@@ -9,6 +9,9 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: User
+        },
+        {
+          model: Comment
         }
       ]
     });
@@ -24,6 +27,32 @@ router.get('/', async (req, res) => {
     res.status(500).json(err)
   }
 });
+
+// Get a single post
+router.get('/post/:id', async (req, res) => {
+  try {
+      const postData = await Post.findByPk(req.params.id, {
+          include: [
+              {
+                  model: User
+              },
+              {
+                  model: Comment
+              },
+
+          ]
+      })
+      const posts = postData.get({ plain: true });
+      // res.json(posts);
+      res.render('post', {
+          posts,
+          // loggedIn: req.session.loggedIn
+      });
+      
+  } catch (err) {
+      res.status(400).json(err);
+  }
+})
 
 // Get the login page
 router.get('/login', async (req, res) => {

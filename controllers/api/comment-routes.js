@@ -5,13 +5,13 @@ const withAuth = require('../../utils/auth.js');
 // Add a new comment
 router.post('/', async (req, res) => {
     try {
-        console.log(req.body);
         const newComment = await Comment.create({
             note: req.body.note,
-            user_id: req.session.user_id,
+            // user_id: req.session.user_id,
+            user_id: req.body.user_id,
             // post_id: req.post.id,
+            user_id: post.body.user_id,
         });
-        console.log(newComment);
         res.status(200).json(newComment);
     } catch (err) {
         res.status(400).json(err);
