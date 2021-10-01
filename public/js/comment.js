@@ -4,7 +4,7 @@ const newFormHandler = async (event) => {
     var postId = document.location.pathname
     postId = postId.split('/');
     postId = postId[2];
-  
+    console.log('i hit this!')
     const note = document.querySelector('#comment-desc').value.trim();
     if (note) {
       const response = await fetch(`/api/comments`, {
@@ -15,7 +15,7 @@ const newFormHandler = async (event) => {
         },
       });
       if (response.ok) {
-        document.location.reload();
+        // document.location.reload();
       } else {
         alert('Failed to create review');
       }
@@ -40,9 +40,9 @@ const newFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.new-post-form')
+    .querySelector('.new-comment-form')
     .addEventListener('submit', newFormHandler);
   
   document
-    .querySelector('.posts-list')
+    .querySelector('.comments-list')
     .addEventListener('click', delButtonHandler);

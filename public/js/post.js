@@ -20,7 +20,7 @@ const newFormHandler = async (event) => {
   }
 };
 
-// Delete a Review
+// Delete a post
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
@@ -39,24 +39,6 @@ const delButtonHandler = async (event) => {
 
 
 
-// Get a single post
-// const linkHandler = async (event) => {
-//   var postId = document.location.pathname
-//   postId = postId.split('/');
-//   postId = postId[2];
-//   if (event.target.hasAttribute('data-id')) {
-//     const response = await fetch(`/api/posts/${postId}`, {
-//       method: 'GET',
-//     });
-
-//     if (response.ok) {
-//       document.location.reload();
-//     } else {
-//       alert('Post not available');
-//     }
-//   }
-// };
-
 document
   .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);
@@ -65,6 +47,3 @@ document
   .querySelector('.posts-list')
   .addEventListener('click', delButtonHandler);
 
-// document
-//   .querySelector('.data-id')
-//   .addEventListener('click', linkHandler);
