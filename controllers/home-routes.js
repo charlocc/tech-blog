@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
         },
         {
           model: Comment
-        }
+        },
       ]
     });
     const posts = postData.map((posts) => posts.get({ plain: true }));
@@ -43,11 +43,12 @@ router.get('/post/:id', async (req, res) => {
           ]
       })
       const posts = postData.get({ plain: true });
-      // res.json(posts);
+      
       res.render('post', {
           posts,
           loggedIn: req.session.loggedIn
       });
+      
       
   } catch (err) {
       res.status(400).json(err);

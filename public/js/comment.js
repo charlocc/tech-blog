@@ -4,6 +4,7 @@ const newFormHandler = async (event) => {
     var postId = document.location.pathname
     postId = postId.split('/');
     postId = postId[2];
+
     console.log('i hit this!')
     const note = document.querySelector('#comment-desc').value.trim();
     if (note) {
@@ -15,14 +16,14 @@ const newFormHandler = async (event) => {
         },
       });
       if (response.ok) {
-        // document.location.reload();
+        document.location.reload();
       } else {
-        alert('Failed to create review');
+        alert('Please log in to add a comment');
       }
     }
   };
   
-  // Delete a Review
+  // Delete a Comment
   const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
@@ -34,7 +35,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.reload();
       } else {
-        alert('You can only delete your own posts.');
+        alert('You can only delete your own comments.');
       }
     }
   };

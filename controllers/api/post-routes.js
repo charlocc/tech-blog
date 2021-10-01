@@ -31,7 +31,7 @@ router.delete('/:id', async (req, res) => {
             }
         });
         if (!deletePost) {
-            res.status(404).json({ message: "You don't have authorization to delete this review." });
+            res.status(404).json({ message: "You don't have authorization to delete this post." });
             return;
         }
         res.status(200).json(deletePost);
