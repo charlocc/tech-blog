@@ -3,15 +3,12 @@
         <div class="col text-center">
             <div class="card review-card column">
                 <div class="card-header">
-                    <div class="row">
-                        <h3 class="col-11">{{posts.title}}</h3>
-                        <button class="col-1" data-id="{{id}}">X</button>
-                    </div>
+                    <h3>{{posts.title}} <span type="text" class="smalltext">by</span> {{posts.user.username}}</h3>
                 </div>
                 <div class="card-body text-center">
                     <blockquote class="blockquote mb-0">
-                        <h5>"{{posts.content}}"</h5>
-                        <p>{{posts.user.username}} / {{posts.date_created}}</p>
+                        <h5>{{posts.content}}</h5>
+                        <p>{{posts.date_created}}</p>
                         {{#each comments as |comment|}}
                         <li>{{> comment}}</li>
                         {{/each}}
