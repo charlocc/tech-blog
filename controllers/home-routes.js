@@ -36,9 +36,9 @@ router.get('/post/:id', async (req, res) => {
               {
                   model: User
               },
-              {
-                  model: Comment
-              },
+              // {
+              //     model: Comment
+              // },
 
           ]
       })

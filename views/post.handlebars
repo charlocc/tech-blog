@@ -4,14 +4,14 @@
             <div class="card review-card column">
                 <div class="card-header">
                     <div class="row">
-                        <h3 class="col-11">{{title}}</h3>
-                        <button class="btn btn-sm col-1 box" data-id="{{id}}">Delete</button>
+                        <h3 class="col-11">{{posts.title}}</h3>
+                        <button class="btn btn-sm col-1 box" data-id="{{id}}">X</button>
                     </div>
                 </div>
                 <div class="card-body text-center">
                     <blockquote class="blockquote mb-0">
-                        <h5>"{{content}}"</h5>
-                        <p>{{user.username}} / {{date_created}}</p>
+                        <h5>"{{posts.content}}"</h5>
+                        <p>{{posts.user.username}} / {{posts.date_created}}</p>
                         {{#each comments as |comment|}}
                         <li>{{> comment}}</li>
                         {{/each}}
