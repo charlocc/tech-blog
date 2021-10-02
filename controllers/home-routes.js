@@ -64,6 +64,15 @@ router.get('/login', async (req, res) => {
   }
 });
 
+// Get the home page
+router.get('/home', async (req, res) => {
+  try {
+    res.render('intro')
+  } catch (err) {
+    res.status(500).json(err)
+  }
+});
+
 
 
 

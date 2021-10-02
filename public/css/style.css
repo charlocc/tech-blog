@@ -55,6 +55,7 @@ input {
     margin: 2px;
 }
 
+
 .funbutton{
     background-color: var(--lightblue);
     color: var(--darkgray);
@@ -89,4 +90,14 @@ input {
 
 .smalltext{
     font-size:15px;
+}
+
+.logbox{
+    border-radius: 9px;
+    border: solid var(--darkgray);
+    padding: 3%;
+}
+
+.logo{
+    width: 50%;
 }
