@@ -26,8 +26,6 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 
 
-### Deployment: 32%
+[Heroku URL](https://radiant-ocean-47580.herokuapp.com/)
 
-* Application GitHub URL submitted.
-
-* Heroku URL submitted.
+![alt text](./public/images/screenshot.png)
