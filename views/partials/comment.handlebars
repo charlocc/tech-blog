@@ -1,14 +1,16 @@
-<div class="text-center" id={{user_id}}>
-    <div class="card review-card comment">
+<div class="text-center">
+    <div class="card review-card comment" id={{user_id}}>
         <div class="card-header">
             <div class="row">
-                <p>{{date_created}}</p>
-                {{!-- <div><button data-id={{id}}>x</button></div> --}}
+                <p class='col-11'>{{date_created}}</p>
+                <div class='col-1'><button data-id={{id}}>x</button></div>
             </div>
         </div>
         <div class="card-body">
-            <p>"{{note}}"</p>
+            <p>{{user.username}}: "{{note}}"</p>
         </div>
     </div>
     </br>
 </div>
+
+
