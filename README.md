@@ -14,14 +14,6 @@ If you are interested in any of the blogs, click on the title, and you will see 
 with the username, post content, date of positing, and the ability to add a comment.
 You can add new posts on the dashboard. 
 
-WHEN I click on the dashboard option in the navigation
-THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
-
-WHEN I click on one of my existing posts in the dashboard
-THEN I am able to delete or update my post and taken back to an updated dashboard
-
-WHEN I am idle on the site for more than a set time
-THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
 
 
