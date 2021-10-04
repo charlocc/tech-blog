@@ -9,8 +9,8 @@
                     <blockquote class="blockquote mb-0">
                         <h5>{{posts.content}}</h5>
                         <p>{{posts.date_created}}</p>
-                        <ul class="comments-list">
-                            {{#each comments as |comment|}}
+                        <ul class="comments-list"> 
+                            {{#each posts.comments as |comment|}}
                             <li>{{> comment}}</li>
                             {{/each}}
                         </ul>

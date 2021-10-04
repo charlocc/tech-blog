@@ -19,6 +19,7 @@ router.post('/', async (req, res) => {
 });
 
 
+
 // Allow only the user who made the comment to delete it
 router.delete('/:id', async (req, res) => {
     try {
@@ -26,6 +27,7 @@ router.delete('/:id', async (req, res) => {
             where: {
                 id: req.params.id,
                 user_id: req.session.user_id,
+
             }
         });
         if (!deleteComment) {
