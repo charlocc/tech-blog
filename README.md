@@ -12,7 +12,7 @@ If you are interested in any of the blogs, click on the title, and you will see 
 with the username, post content, date of positing, and the ability to add a comment.
 You can add new posts on the dashboard. 
 
-## Languages
+## Technologies
 
 * Javascript
 * HTML
